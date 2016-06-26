@@ -1,0 +1,32 @@
+/* using openmesh on fedora */
+1. Download OpenMesh via website or git
+    cd OpenMesh
+    mkdir build
+    cd build
+    cmake .. (-DCMAKE_BUILD_TYPE=(Debug|Release))
+    sudo make install
+2. Compile
+    g++ -o test -lOpenMeshCore -lOpenMeshTools test.cpp
+# if error while loading shared libraries
+    add "/usr/local/lib" in /etc/ld.so.conf
+    sudo ldconfig
+
+/* using glfw on fedora */
+1. Download glfw via dnf
+    sudo dnf install glfw glfw-devel
+2. Compile
+    g++ -o test -lglfw -lGL test.cpp
+
+/* using glut on fedora */
+1. Download freeglut via dnf
+    sudo dnf install freeglut freeglut-devel
+2. Compile
+    g++ -o test -lglut -lGL -lGLU test.cpp
+
+# Download glew via dnf
+    sudo dnf install glew glew-devel
+
+/* glfw and openmesh */
+    g++ -o test -lglfw -lGL -lOpenMeshCore -lOpenMeshTools test.cpp
+/* glut and openmesh */
+    g++ -o test -lglut -lGL -lGLU -lOpenMeshCore -lOpenMeshTools test.cpp
