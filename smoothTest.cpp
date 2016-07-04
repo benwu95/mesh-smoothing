@@ -18,7 +18,7 @@ int main() {
     }
     IO::Options opt;
     opt += IO::Options::VertexColor;
-    const char* filename = "off/23.off";
+    const char* filename = "model/large-model/bunny/bun_zipper.ply";
     if (!OpenMesh::IO::read_mesh(original, filename, opt)) {
         cerr << "Error: Cannot read mesh from " << filename << endl;
         return 1;
@@ -41,7 +41,7 @@ int main() {
             fvh.push_back(*fvit);
         mesh.add_face(fvh);
     }
-    if (!IO::write_mesh(mesh, "output.off")) {
+    if (!IO::write_mesh(mesh, "output.obj")) {
         cerr << "Cannot write mesh to file 'output.off'\n";
         return 1;
     }
