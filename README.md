@@ -29,7 +29,7 @@ Prepare
 Compile
 -------
 
-make
-    if error while loading shared libraries  
-    add "/usr/local/lib" in /etc/ld.so.conf  
-    `sudo ldconfig`
+`make`
+> if error while loading shared libraries
+> add "/usr/local/lib" in /etc/ld.so.conf
+> `sudo ldconfig`
