@@ -36,8 +36,15 @@ just `make`
 
 Run
 ---
+
 Laplacian Smoothing = 1  
 Taubin Smoothing = 2  
 * `./smoothEx <algorithm> <times> <input obj file> <output obj file>`
 * example of Laplacian Smoothing: `./smoothEx 1 50 input.obj output.obj`
 * example of Taubin Smoothing: `./smoothEx 2 50 input.obj output.obj`
+
+Output
+------
+
+* filename.obj: only vertex and face
+* filename_n.obj: add vertex normal
