@@ -33,3 +33,11 @@ just `make`
 > if error while loading shared libraries  
 > add "/usr/local/lib" in /etc/ld.so.conf  
 > `sudo ldconfig`
+
+Run
+---
+Laplacian Smoothing = 1  
+Taubin Smoothing = 2  
+* `./smoothEx <algorithm> <times> <input obj file> <output obj file>`
+* example of Laplacian Smoothing: `./smoothEx 1 50 input.obj output.obj`
+* example of Taubin Smoothing: `./smoothEx 2 50 input.obj output.obj`
