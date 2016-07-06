@@ -13,6 +13,8 @@ Smoothing Algorithm
 Prepare
 -------
 
+> [Compiling OpenMesh (OpenMesh Documentation)](http://www.openmesh.org/media/Documentations/OpenMesh-Doc-Latest/a00030.html)
+
 1. Download OpenMesh via website or git
     * static version: [OpenMesh Download Page](http://www.openmesh.org/download/)
     * development version: `git clone https://www.graphics.rwth-aachen.de:9000/OpenMesh/OpenMesh.git`
